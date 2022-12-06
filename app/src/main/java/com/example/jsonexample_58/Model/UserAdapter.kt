@@ -28,8 +28,8 @@ class UserAdapter(val context: Context, private val items: ArrayList<UserModelCl
         holder.textViewUserGender.text = item.gender
         holder.textViewUserWeight.text = item.weight.toString()
         holder.textViewUserHeight.text = item.height.toString()
-        holder.textViewUserMobileNumber.text = item.mobile
-        holder.textViewUserOfficeNumber.text = item.office
+        holder.textViewUserMobileNumber.text = item.phone.mobile
+        holder.textViewUserOfficeNumber.text = item.phone.office
     }
 
     override fun getItemCount(): Int {
